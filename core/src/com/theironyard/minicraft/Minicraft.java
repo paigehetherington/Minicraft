@@ -20,9 +20,9 @@ public class Minicraft extends ApplicationAdapter {
     Animation walkDown;
     Animation walkRight;
     Animation walkLeft;
-    float zombiexv, zombieyv;
+    //float zombiexv, zombieyv;
     SpriteBatch batch;
-    TextureRegion down, up, right, left, stand, zombieStand;
+    TextureRegion down, up, right, left, stand; //zombieStand;
 
 
     float x = 0;
@@ -39,7 +39,7 @@ public class Minicraft extends ApplicationAdapter {
         up = grid[6][1];
         right = grid[6][3];
         stand = grid[6][2];
-        zombieStand = grid[6][6];
+        //zombieStand = grid[6][6];
         left = new TextureRegion(right);
         left.flip(true, false);
         TextureRegion upFlip = new TextureRegion(up);
@@ -118,7 +118,7 @@ public class Minicraft extends ApplicationAdapter {
 
         batch.begin();
         batch.draw(img, x, y, WIDTH, HEIGHT);
-        batch.draw(zombieStand, 100, 200, WIDTH, HEIGHT);
+        //batch.draw(zombieStand, 100, 200, WIDTH, HEIGHT);
         batch.end();
     }
 
@@ -156,4 +156,4 @@ public class Minicraft extends ApplicationAdapter {
 
 
 
-}
+
